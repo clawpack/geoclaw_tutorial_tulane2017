@@ -22,6 +22,8 @@ You can go into the `notebooks/chile2010a` directory, for example, and run the
 code from the command line, e.g. via
 
     make all
+    
+See below for how to view the resulting plots.
 
 ### Notebook server:
 
@@ -34,8 +36,19 @@ Then open browser to:
 
     http://localhost:8889/tree
 
+Use `ctrl-C` to exit the Jupyter notebook server.
 
-You can exit a container (after using `ctrl-C` to quit the jupyter server if
+### Connecting with a second bash shell
+
+If you have the notebook server running and also want another window open with a bash shell (to run GeoClaw from the command line), in another shell on your laptop you can do:
+
+    docker exec -it geoclaw_tutorial_container bash
+    
+### Exiting a shell / halting a container
+
+Use `Ctrl-p Ctrl-q` to exit from a shell without halting the docker container.
+
+You can exit the container (after using `ctrl-C` to quit the jupyter server if
 one is running) via::
 
     root...# exit
@@ -46,6 +59,15 @@ You can restart the container via::
 
     docker start -a -i geoclaw_tutorial_container
 
+The external port should still work for serving notebooks.
+
+### Viewing plots
+
+If you run GeoClaw from the command line and want to view the resulting plots (generated e.g. via `make .plots`),  you can point your browser to, e.g.:
+
+    http://localhost:8890/files/chile2010a/_plots/_PlotIndex.html
+    
+This assumes you have the Jupyter notebook server running (from a different shell).
 
 ### More resources:
 
