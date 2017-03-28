@@ -49,5 +49,7 @@ You can restart the container via::
 
 ### More resources:
 
+ - [Docker for Clawpack](http://www.clawpack.org/docker_image.html#docker-image).  The Dockerfile provided here includes everything in the Clawpack-5.4.0 image.
+ 
  - [Introduction to Docker](https://geohackweek.github.io/Introductory/01-docker-tutorial/) from 
    the recent [GeoHack Week](https://geohackweek.github.io) at UW.
