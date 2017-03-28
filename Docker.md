@@ -44,7 +44,7 @@ one is running) via::
 
 You can restart the container via::
 
-    docker start -a -i clawpack-v5.4.0_container
+    docker start -a -i geoclaw_tutorial_container
 
 
 ### More resources:
