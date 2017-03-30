@@ -7,15 +7,23 @@
  
 First install [Docker](https://www.docker.com/).
 
-Then, in this directory, do:
+Then clone this repository if you haven't already:
 
-    docker build -t geoclaw_tutorial_dockerimage -f Dockerfile .
+    $ git clone https://github.com/clawpack/geoclaw_tutorial_tulane2017
+    
+Then go into this directory,
+
+    $ cd geoclaw_tutorial_tulane2017
+
+and build a Docker image:
+
+    $ docker build -t geoclaw_tutorial_dockerimage -f Dockerfile .
 
 Don't forget the last `.` on this line!
 
 Then do:
 
-    docker run -i -t -p 8889:8889 --name geoclaw_tutorial_container \
+    $ docker run -i -t -p 8889:8889 --name geoclaw_tutorial_container \
            geoclaw_tutorial_dockerimage
 
 This starts a virtual machine (*container*) named `geoclaw_tutorial_container` and gives a prompt like: 
@@ -25,7 +33,7 @@ This starts a virtual machine (*container*) named `geoclaw_tutorial_container` a
 You can go into the `notebooks/chile2010a` directory, for example, and run the
 code from the command line, e.g. via
 
-    make all
+    root@...# make all
     
 See below for how to view the resulting plots.
 
@@ -54,7 +62,7 @@ See http://jupyter.org/ for more documentation on Jupyter.
 
 If you have the notebook server running and also want another window open with a bash shell (to run GeoClaw from the command line), in another shell on your laptop you can do:
 
-    docker exec -it geoclaw_tutorial_container bash
+    $ docker exec -it geoclaw_tutorial_container bash
     
 ### Exiting a shell / halting a container
 
@@ -69,7 +77,7 @@ one is running) via::
 
 You can restart the container via::
 
-    docker start -a -i geoclaw_tutorial_container
+    $ docker start -a -i geoclaw_tutorial_container
 
 The external port should still work for serving notebooks.
 
@@ -77,7 +85,7 @@ The external port should still work for serving notebooks.
 
 If you run GeoClaw from the command line and want to view the resulting plots (generated e.g. via `make .plots`),  you can point your browser to, e.g.:
 
-    http://localhost:8890/files/chile2010a/_plots/_PlotIndex.html
+    http://localhost:8889/files/chile2010a/_plots/_PlotIndex.html
     
 This assumes you have the Jupyter notebook server running (from a different shell).
 
