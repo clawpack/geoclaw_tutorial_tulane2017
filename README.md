@@ -9,8 +9,13 @@ See [the installation instructions](http://www.clawpack.org/installing.html).  N
 
 ### Using Docker
 
-We will provide a Dockerfile so that you can easily have everything you need, if you have 
-[Docker](https://www.docker.com/) installed.  See also 
+In this directory you will find a Dockerfile that makes it easy to install Clawpack 
+and all the dependencies needed within a virtual machine, once you have 
+[Docker](https://www.docker.com/) installed. 
+
+See the file `Dockerfile.md` for instructions.
+
+See also 
 [Docker for Clawpack](http://www.clawpack.org/docker_image.html#docker-image).
 
 ### Notebooks
@@ -23,3 +28,4 @@ To see the notebooks with the animations intact, you can view them using
 
  - [chile2010a](https://nbviewer.jupyter.org/github/clawpack/geoclaw_tutorial_tulane2017/blob/master/notebooks/chile2010a/chile2010a.ipynb)
  - [chile2010b](https://nbviewer.jupyter.org/github/clawpack/geoclaw_tutorial_tulane2017/blob/master/notebooks/chile2010b/chile2010b.ipynb)
+ - More to appear with storm surge examples.
