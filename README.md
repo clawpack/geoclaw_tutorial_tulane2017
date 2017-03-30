@@ -13,14 +13,20 @@ In this directory you will find a Dockerfile that makes it easy to install Clawp
 and all the dependencies needed within a virtual machine, once you have 
 [Docker](https://www.docker.com/) installed. 
 
+This is an alternative to installing Clawpack and its dependencies on your laptop.
+
 See the file `Dockerfile.md` for instructions.
 
 See also 
 [Docker for Clawpack](http://www.clawpack.org/docker_image.html#docker-image).
 
+### GeoClaw examples
+
+The `geoclaw_examples` directory contains several subdirectories where you can do some experiments with setting parameters, running the code, and viewing results.
+
 ### Notebooks
 
-The `notebooks` directory contains some notebooks that will be used to guide the tutorial.
+The `notebooks` directory contains some [Jupyter notebooks](http://jupyter.org/) that will be used to guide the tutorial.
 
 Github renders notebooks, except that the animations will not be displayed. 
 To see the notebooks with the animations intact, you can view them using 
