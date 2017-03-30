@@ -134,7 +134,7 @@ def setrun(claw_pkg='geoclaw'):
 
     elif clawdata.output_style == 2:
         # Specify a list of output times.
-        clawdata.output_times = np.linspace(4,8,17) * 3600.
+        clawdata.output_times = np.linspace(3.5,8,19) * 3600.
 
     elif clawdata.output_style == 3:
         # Output every iout timesteps with a total of ntot time steps:
