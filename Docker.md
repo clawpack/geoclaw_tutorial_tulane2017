@@ -7,15 +7,11 @@
  
 First install [Docker](https://www.docker.com/).
 
-Then clone this repository if you haven't already:
+Then download the Dockerfile from this directory, either directly from the Github webpage or by cloning this repository:
 
     $ git clone https://github.com/clawpack/geoclaw_tutorial_tulane2017
     
-Then go into this directory,
-
-    $ cd geoclaw_tutorial_tulane2017
-
-and build a Docker image:
+Then go into the directory containing the Dockerfile and build a Docker image:
 
     $ docker build -t geoclaw_tutorial_dockerimage -f Dockerfile .
 
@@ -23,17 +19,17 @@ Don't forget the last `.` on this line!
 
 Then do:
 
-    $ docker run -i -t -p 8889:8889 --name geoclaw_tutorial_container \
-           geoclaw_tutorial_dockerimage
+    $ docker run -i -t -p 8889:8889 --name geoclaw_tutorial_container geoclaw_tutorial_dockerimage
 
 This starts a virtual machine (*container*) named `geoclaw_tutorial_container` and gives a prompt like: 
 
     root@...# 
 
-You can go into the `notebooks/chile2010a` directory, for example, and run the
+You can go into the `geoclaw_tutorial_tulane2017/geoclaw_examples/chile2010a` directory, for example, and run the
 code from the command line, e.g. via
 
-    root@...# make all
+    root@...# make topo
+    root@...# make .plots
     
 See below for how to view the resulting plots.
 
@@ -41,8 +37,7 @@ See below for how to view the resulting plots.
 
 If you want to work with the notebooks, start the notebook server via
 
-    root@...# jupyter notebook --notebook-dir=/notebooks \
-              --ip='*' --port=8889 --no-browser
+    root@...# jupyter notebook --notebook-dir=/geoclaw_tutorial_tulane2017 --ip='*' --port=8889 --no-browser
 
 Then open a browser (on your laptop) to the URL printed out when the Jupyter server starts via the command above.  This might be of the form:
 
@@ -52,7 +47,7 @@ or perhaps will include a token, something like:
 
   http://localhost:8889/?token=9542fb1ed940f873f28e6a371c6334c5b1a0d8656121905c
   
-This should open a web page with the list of all available notebooks. 
+This should open a web page with the list of directories.  Navigate to `notebooks/Index.ipynb` to get started.
 
 Use `ctrl-C` to exit the Jupyter notebook server.
 
@@ -85,9 +80,10 @@ The external port should still work for serving notebooks.
 
 If you run GeoClaw from the command line and want to view the resulting plots (generated e.g. via `make .plots`),  you can point your browser to, e.g.:
 
-    http://localhost:8889/files/chile2010a/_plots/_PlotIndex.html
+    http://localhost:8889/files/geoclaw_examples/chile2010a/_plots/_PlotIndex.html
     
 This assumes you have the Jupyter notebook server running (from a different shell).
+
 
 ### Removing a container
 

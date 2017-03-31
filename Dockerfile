@@ -22,9 +22,5 @@ RUN echo 'export FC=gfortran' >> ~/.bashrc
 RUN curl -sL https://github.com/clawpack/apps/archive/master.tar.gz | tar xz
 RUN mv apps-master /clawpack-v5.4.0/apps
 
-# Additional Python packages
-RUN pip install plotly
-
-RUN mkdir /notebooks
-COPY /notebooks/ /notebooks
+RUN git clone https://github.com/clawpack/geoclaw_tutorial_tulane2017
 
