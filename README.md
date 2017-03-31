@@ -2,6 +2,8 @@
 Resources for a GeoClaw tutorial at Tulane University in April, 2017, as part of the
 [Clifford Lectures Conference](http://www2.tulane.edu/sse/math/news/clifford-lectures-april-2017.cfm).
 
+If you want to follow along during the tutorial, please try to get GeoClaw working in advance!
+
 ### Installing Clawpack/GeoClaw
 
 See [the installation instructions](http://www.clawpack.org/installing.html).  Note that several 
