@@ -5,7 +5,7 @@
  - `$` refers to the native bash shell prompt on your computer, 
  - `root@...#` refers to the bash shell prompt within the Docker container, once you have that running.
  
-First install [Docker](https://www.docker.com/).
+First install [Docker](https://www.docker.com/) and start the Docker daemon.
 
 Then download the Dockerfile from this directory, either directly from the Github webpage or by cloning this repository:
 
@@ -21,13 +21,14 @@ Then do:
 
     $ docker run -i -t -p 8889:8889 --name geoclaw_tutorial_container geoclaw_tutorial_dockerimage
 
-This starts a virtual machine (*container*) named `geoclaw_tutorial_container` and gives a prompt like: 
+This starts a virtual machine (*container*) named `geoclaw_tutorial_container` and gives a Unix prompt like: 
 
     root@...# 
 
 You can go into the `geoclaw_tutorial_tulane2017/geoclaw_examples/chile2010a` directory, for example, and run the
 code from the command line, e.g. via
 
+    root@...# cd geoclaw_tutorial_tulane2017/geoclaw_examples/chile2010a
     root@...# make topo
     root@...# make .plots
     
