@@ -7,7 +7,11 @@
  
 First install [Docker](https://www.docker.com/) and start the Docker daemon.
 
-Then download the Dockerfile from this directory, either directly from the Github webpage or by cloning this repository:
+Then download the Dockerfile from this directory, either as a single file via:
+
+    $ wget https://raw.githubusercontent.com/clawpack/geoclaw_tutorial_tulane2017/master/Dockerfile
+    
+or by cloning this repository:
 
     $ git clone https://github.com/clawpack/geoclaw_tutorial_tulane2017
     
