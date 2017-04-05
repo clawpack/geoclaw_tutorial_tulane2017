@@ -36,4 +36,4 @@ To see the notebooks with the animations intact, you can view them using
 
  - [chile2010a](https://nbviewer.jupyter.org/github/clawpack/geoclaw_tutorial_tulane2017/blob/master/notebooks/chile2010a/chile2010a.ipynb)
  - [chile2010b](https://nbviewer.jupyter.org/github/clawpack/geoclaw_tutorial_tulane2017/blob/master/notebooks/chile2010b/chile2010b.ipynb)
- - More to appear with storm surge examples.
+ - [katrina](https://nbviewer.jupyter.org/github/clawpack/geoclaw_tutorial_tulane2017/blob/master/notebooks/katrina/katrina.ipynb)
